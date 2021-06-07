@@ -1,0 +1,74 @@
+.main_content
+{
+
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.main_content #cityName
+{
+   width: 25rem; ;
+   height: 3rem;
+   border-radius: 10px;
+}
+
+
+.tempInfo
+{
+    margin-top: 8%;
+    background-color: black;
+    border-radius: 10px;
+    height: 15rem;
+    width: 35rem;
+    margin-left: 20%;
+    
+    
+}
+.tempInfo p
+{
+    font-weight: 800;
+    color: aliceblue;
+    font-size: larger;
+}
+#city
+{
+    color: white;
+    letter-spacing: 4px;
+    margin-left: 22%;
+    font-weight: 900;
+}
+body
+{
+    background-image: url("https://nordicapis.com/wp-content/uploads/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.midlayer  #temp
+{
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    
+    
+}
+.midlayer h3
+{
+    font-weight: 900;
+    color: white;
+    letter-spacing: 5px;
+    margin-left: 2%;
+}
+.midlayer #status
+{
+    margin-right: 2%;
+    margin-bottom: 1rem;
+}
+hr
+{
+    color: cornsilk;
+}
+.data_hide
+{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+  
