@@ -1,28 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size:120%;
+}
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbUr7S1gu6EvLtJXtBaI02noiEzt8FEy5fWw&usqp=CAU') ;
+    background-size: cover;
+    background-position: center;
+}
+.navbar-brand{
+    font-size: 20px;
+}
 .main_header_left h1
 {
-    color :violet;
+    color :white;
     letter-spacing: 2px;
     margin-top: 5%;
     padding-bottom: 2%;
+    font-size:40px;
 }
 .main_header_left p
 {
-    color: blueviolet;
-    letter-spacing: 2px;
-
+    color: whitesmoke;
+    /* letter-spacing: 2px; */
+   font-size: 1rem;
 }
 span
 {
-    color: blanchedalmond;
+    color: #0097E6;
 }
-a
+a 
 {
     color:white;
     text-decoration: none;
 }
-a:hover
+.nav-link :hover
 {
-    color: whitesmoke;
+    color: #0097E6;
 }
 .carousel-item img {
     height: 450px !important;
@@ -32,13 +57,59 @@ a:hover
 #welcome
 {
     margin-top: 20%;
+    font-size: 1.5rem;
+    font-weight: bold;
     color :turquoise
 }
 footer
 {
-    margin-top: 7%;
-    color: darkblue;
-    background-color: darkgoldenrod;
-   
-    padding-bottom: 1%;
+    margin-top: 13%;
+    color: whitesmoke;
+    background-color:#1e272e ;
+    text-align: center;
+    padding-bottom:1px
+}
+
+.fa-snowflake{
+    color: #0097E6;
+}
+
+.btn {
+     animation: but-anime 2s linear infinite alternate;
+}
+@keyframes but-anime {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: #0097E6;
+}
+.btn a {
+    color:black;
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.btn{    
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 2rem;
+    color:black !important;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
 }

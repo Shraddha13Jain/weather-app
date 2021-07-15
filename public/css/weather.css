@@ -1,28 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbUr7S1gu6EvLtJXtBaI02noiEzt8FEy5fWw&usqp=CAU') ;
+    background-size: cover;
+    background-position: center;
+}
+html{
+    font-size:120%;
+}
 .main_content
 {
 
-    margin-left: 25%;
+    margin-left: auto;
     margin-top: 5%;
 }
 .main_content #cityName
 {
-   width: 25rem; ;
-   height: 3rem;
-   border-radius: 10px;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 3rem
 }
 
 
-.tempInfo
-{
-    margin-top: 8%;
-    background-color: black;
-    border-radius: 10px;
-    height: 15rem;
-    width: 35rem;
-    margin-left: 20%;
-    
-    
-}
+
+
 .tempInfo p
 {
     font-weight: 800;
@@ -33,14 +45,17 @@
 {
     color: white;
     letter-spacing: 4px;
-    margin-left: 22%;
     font-weight: 900;
 }
-body
+
+footer
 {
-    background-image: url("https://nordicapis.com/wp-content/uploads/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 25%;
+    background-color: #1e202b;
+    color:whitesmoke ;
+    text-align: center;
+    padding-bottom:1px
+    
 }
 .midlayer  #temp
 {
@@ -71,4 +86,208 @@ hr
     visibility: hidden;
     transition: all 0.3s linear;
 }
+.fa-snowflake{
+    color: #0097E6;
+}
+@keyframes but-anime {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: #0097E6;
+}
+.btn a {
+    color:black;
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main_header_left h1
+{
+    color :white;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    font-size:40px;
+}
+.main_header_left p
+{
+    color: whitesmoke;
+    /* letter-spacing: 2px; */
+   font-size: 1rem;
+}
+.main_content #cityName
+{
+   width:100%;
+   background-color: #2a2b2c;
+
+
+}
+#submitBtn
+{
+    height: 3rem !important;
+    margin-left: 1rem !important;
+    border-radius: 30px;
+    margin: auto;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  input, select, text {
+    color: white
+    }
+    
+
+.tempInfo
+{
+   
+    background-color: #2a2b2c;
+    border-radius: 10px;
+    margin-top: 5%;
+    min-height: 15rem;
+    margin-top: 8%;
+    width: 35rem;
+
+    
+}
+.tempInfo p
+{
+    font-weight: 800;
+    color: sandybrown;
+    font-size: larger;
+}
+#date
+{
+    margin-left: 15%;
+    color: springgreen;
+}
+#city
+{
+    color: yellow;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-top: 3%;
+}
+
+.midlayer  #temp
+{
+    margin-top: 3%;
+    font-weight: 700;
+    color: skyblue;
+    margin-bottom: 1rem;
+    
+    
+}
+.midlayer h3
+{
+    margin-top: 6%;
+    font-weight: 900;
+    color: skyblue;
+    letter-spacing: 5px;
+    margin-left: 2%;
+}
+.midlayer #status
+{
+    margin-left: 2%;
+    margin-bottom: 1rem;
+    padding-left: 15%;
+    margin-top: 4%;
+}
+hr
+{
+    color: cornsilk;
+}
+.data_hide
+{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+@media screen and (max-width: 769px) {
+    .tempInfo {
+      max-width :85%; 
+      margin-right: 10px;
+      margin-left: 10%;
+    }
+    .main_content
+{
+
   
+    margin-top: 5%;
+    margin-left: 10%;
+}
+    #submitBtn
+    {
+    height: 3rem !important;
+    margin-top: 1.5rem !important;
+    }
+    #date
+{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#day
+{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.midlayer  #temp
+{
+    margin-top: 3%;
+    font-weight: 700;
+    color: skyblue;
+ 
+    margin-left: 30%;
+   
+    
+    
+}
+.midlayer h3
+{
+    margin-top: 3%;
+    font-weight: 900;
+    color: skyblue;
+    letter-spacing: 5px;
+    
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.midlayer #status
+{
+
+    margin-bottom: 1rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 10%;
+    margin-top: 0;
+}
+
+  }
+  @media screen and (max-width: 306px) {
+    #date
+    {
+        margin-left: 20%;
+        margin-right: 30%;
+    }
+    #day
+    {
+        margin-left: 20%;
+        margin-right: 30%;
+    }
+  }
+ 
